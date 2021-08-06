@@ -18,7 +18,7 @@ _**The an effective implementation Ensure:**_
 
 
 Please refer to the **../flow_diagram.png** for an example efficient system.
-* Assumption: System to return a Test.com/{encoded 7 letter URL}:
+* Assumption: System to return a https://tinyurl.com/{encoded 7 letter URL}:
 * the character base that I intend to use AlphaNumeric i.e all character Map encoded in base64 i.e.<br> base 64 offers 64 pow 7 = 68,719,476,736 possible combination that can be used.   
        
 other approach includes using: **pip install short_url** where one can use a decode and encode url and refer it in a local schema. 
