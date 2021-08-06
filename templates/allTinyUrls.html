@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}all Tiny Urls{% endblock %}
+
+{% block content %}
+<div class="container">
+    <label> All the Tiny URL saved So far: </label>
+
+<table class="table table-striped">
+    <thead>
+    <th scope="col">InsertionId</th>
+    <th scope="col">Tiny Urls :</th>
+    <th scope="col">original Urls:</th>
+    </thead>
+    {% for url in vals %}
+    <tr>
+        <td scope="row">{{url.id_}}</td>
+        <td scope="row">{{url.shortenUrl}}</td>
+        <td scope="row">{{url.originalUrl}}</td>
+        {% endfor %}
+</table>
+        <a href="http://127.0.0.1:8082/">BACK TO HOME</a></div>
+</div>
+
+{% endblock %}

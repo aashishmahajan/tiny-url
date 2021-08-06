@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block title %}Pseudo Tiny URL{% endblock %}
+
+{% block content %}
+
+<form action="#" , method="post">
+    <label for="url"> Enter a long URL to make a TinyURL</label> <br>
+
+    <input type="url" name="generateTiny" id="url"
+           pattern="https://.*" size="60"
+           placeholder="https://example.com"
+           required style="line-height:2em;"> <br/><br/>
+
+    <input type="submit" value="make tiny url!" class="btn btn-primary"
+           style="background-color: lightcoral ;border: none">
+</form>
+<br/><br/><br/>
+<form action="#" , method="post">
+    <label for="url"> Retrieve the long URL for TinyURL</label> <br>
+
+    <input type="url" name="retrieveTiny" id="tinyUrl"
+           pattern="http://.*|https://.*" minlength="26" size="27"
+           placeholder="https://tinyUrl.com/XXXXXXX"
+           required style="line-height:2em;"><br/><br/>
+
+    <input type="submit" value="Get tiny url!" class="btn btn-primary"
+           style="background-color: deepskyblue ;border: none">
+
+</form>
+<br/><br/><br/>
+<form action="#" , method="post">
+    <label for="url"> Retrieve All URLs saved so far</label><br/>
+    <input name="retrieveAll" type="submit" value="Get All tiny url!" class="btn btn-primary"
+           style="background-color: #6ac196 ;border: none">
+</form>
+{% endblock %}
